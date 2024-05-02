@@ -4,3 +4,7 @@
   - name: printing through filters
     ansible.builtin.debug:
       msg: "Hello {{ WISHES | default ('GOOD Morning') }}"
+
+  - name: printing in upper case
+    ansible.builtin.debug:
+      msg: "Hello Mani | upper"
