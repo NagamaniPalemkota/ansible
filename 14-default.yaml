@@ -1,5 +1,7 @@
 - name: Variables
   hosts: localhost
+  vars:
+    WISHES: GOOD DAY
   tasks:
   - name: printing through filters
     ansible.builtin.debug:
