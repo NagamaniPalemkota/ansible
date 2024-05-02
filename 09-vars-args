@@ -1,0 +1,6 @@
+- name: Variables from args
+  hosts: localhost
+  tasks:
+  - name: printing through variables from arguments
+    ansible.builtin.debug:
+      msg: "Hello , am learning {{ COURSE }} {{ TRAINER }}"
