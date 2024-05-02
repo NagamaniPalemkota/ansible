@@ -1,0 +1,16 @@
+- name: Variables preceedence
+  hosts: localhost
+  vars_files:
+    vars.yaml
+  vars_prompt:
+    name: WISHES
+    prompt: Enter your wishes
+    private: false
+  vars: #variable declaration in play level
+    WISHES: GM from play
+  tasks:
+  - name: printing through variables
+    vars: #variable declaration in task level
+      WISHES: GM from task 
+    ansible.builtin.debug:
+      msg: "Hello , {{ WISHES }} "
