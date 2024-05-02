@@ -7,7 +7,7 @@
   #   prompt: Enter your wishes
   #   private: false
   vars: #variable declaration in play level
-    WISHES: GM from play
+    #WISHES: GM from play
   tasks:
   - name: printing through variables
     vars: #variable declaration in task level
