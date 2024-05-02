@@ -3,12 +3,10 @@
   tasks:
   - name: Play1 and task1
     ansible.builtin.debug:
-      name: Task1 in Play1
       msg: "HELLO AM FROM TASK1 IN play1"
 
   - name: Play1 and task2
     ansible.builtin.debug:
-      name: Task2 in play1
       msg: "HELLO AM FROM TASK2 - PLAY1"
 
 - name: Play2 #this is play2
@@ -16,10 +14,8 @@
   tasks:
   - name: Task1 in play2
     ansible.builtin.debug:
-      name: Paly2-task1
       msg: "Hello am from play2 and task1"
 
   - name: Task2 in play2
     ansible.builtin.debug:
-      name: PLay2-task2
       msg: "Hello am from play2 - task2"
