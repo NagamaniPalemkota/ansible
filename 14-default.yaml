@@ -7,4 +7,4 @@
 
   - name: printing in upper case
     ansible.builtin.debug:
-      msg: "Hello Mani | upper"
+      msg: "Hello {{ WISHES | upper }}"
