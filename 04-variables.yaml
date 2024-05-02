@@ -1,0 +1,9 @@
+- name: Variables
+  hosts: web
+  vars:
+    COURSE: Devops
+    TRAINER: Siva
+  tasks:
+  - name: printing through variables
+    ansible.builtin.debug:
+      msg: "Hello , am learning {{ COURSE }} from {{ TRAINER }}"
