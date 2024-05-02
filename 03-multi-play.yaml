@@ -13,9 +13,9 @@
   hosts: localhost
   tasks:
   - name: Task1 in play2
-    ansible.builtin.debug:
+    debug:
       msg: "Hello am from play2 and task1"
 
   - name: Task2 in play2
-    ansible.builtin.debug:
+    debug:
       msg: "Hello am from play2 - task2"
