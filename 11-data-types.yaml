@@ -1,0 +1,16 @@
+- name: Lists and maps
+  hosts: localhost
+  vars:
+    USER: Mani
+    COURSE: #list
+    - ansible
+    - terraform
+    - docker
+    WEEKS: #map/dictionary
+      WEEKNUM: 1st
+      WEEK: 3rd
+      WEEKNO: 5th
+  tasks:
+  - name: Data types covered
+    ansible.builtin.debug:
+      msg: "{{ USER }} is learning {{ COURSE }} in {{ WEEKS }}"

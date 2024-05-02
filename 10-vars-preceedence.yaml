@@ -14,3 +14,14 @@
       #WISHES: GM from task 
     ansible.builtin.debug:
       msg: "Hello , {{ WISHES }} "
+
+
+# Variables preceedence:
+
+  # 1. Variables given as arguments
+	# 2. Variables given in task level
+	# 3. Variables given in file
+	# 4. Variables in prompt
+	# 5. Variables in play
+	# 6. Variables in inventory
+  #   Variables in role level
