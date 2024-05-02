@@ -7,10 +7,10 @@
     - terraform
     - docker
     WEEKS: #map/dictionary
-      CONCEPTS-IN: 1st
+      WEEKS: 1st
       WEEK: 3rd
       WEEKNO: 5th
   tasks:
   - name: Data types covered
     ansible.builtin.debug:
-      msg: "{{ USER }} is learning {{ COURSE }} in {{ WEEKS{CONCEPTS-IN} }}"
+      msg: "{{ USER }} is learning {{ COURSE }} in {{ WEEKS }}"
