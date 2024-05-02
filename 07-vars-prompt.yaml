@@ -1,0 +1,13 @@
+- name: Variables
+  hosts: web
+  vars_prompt: #variable declaration from prompt
+  - name: USERNAME
+    prompt: "Enter user name"  
+    private: false
+  - name: PASSWORD
+    prompt: "Enter password"
+    private: true
+  tasks:
+  - name: printing through variables from prompt
+    ansible.builtin.debug:
+      msg: "Hello , am learning {{ USERNAME }} from {{ PASSWORD }}"
