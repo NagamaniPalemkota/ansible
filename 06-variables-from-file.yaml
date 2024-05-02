@@ -1,0 +1,8 @@
+- name: Variables
+  hosts: web
+  vars_files: #variable declaration in play level
+    vars.yaml
+  tasks:
+  - name: printing through variables
+    ansible.builtin.debug:
+      msg: "Hello , am learning {{ COURSE }} from {{ TRAINER }}"
