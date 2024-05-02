@@ -3,6 +3,7 @@
   tasks:
   - name: using command module
     ansible.builtin.command: id expense
+    ignore_errors: true
 
   - name: printing a message
     ansible.builtin.debug:
