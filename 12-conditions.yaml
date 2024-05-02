@@ -4,7 +4,7 @@
   - name: using command module
     ansible.builtin.command: id expense
     ignore_errors: true
-    REGISTER: USER
+    register: USER
   - name: printing a message
     ansible.builtin.debug:
       msg: "Hello {{ USER}}"
