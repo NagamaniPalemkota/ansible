@@ -1,7 +1,7 @@
 - name: Variables
   hosts: web
-  vars:
-    COURSE: Devops
+  vars: #variable declaration
+    COURSE: Devops and cloud
     TRAINER: Siva
   tasks:
   - name: printing through variables
