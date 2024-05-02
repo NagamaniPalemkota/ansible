@@ -1,7 +1,7 @@
 - name: using filters
   hosts: localhost
   vars_prompt:
-    name: Number
+  - name: Number
     prompt: Enter a number
     private: false
   tasks:
