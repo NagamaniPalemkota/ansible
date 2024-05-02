@@ -8,7 +8,7 @@
 
   - name: Creating user
     ansible.builtin.command: useradd expense
-    when: USER.rc -ne 0
+    when: USER.rc != 0
 
   - name: printing a message
     ansible.builtin.debug:
