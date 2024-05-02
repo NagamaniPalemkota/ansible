@@ -11,6 +11,6 @@
   tasks:
   - name: printing through variables
     vars: #variable declaration in task level
-      WISHES: GM from task 
+      #WISHES: GM from task 
     ansible.builtin.debug:
       msg: "Hello , {{ WISHES }} "
