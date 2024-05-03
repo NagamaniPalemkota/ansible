@@ -1,0 +1,10 @@
+- name: using loops
+  hosts: localhost
+  tasks:
+  - name: loops
+    ansible.builtin.debug:
+      msg: "Given list of items are {{ item }}"
+    loop:
+    - box
+    - pen
+    - eraser
