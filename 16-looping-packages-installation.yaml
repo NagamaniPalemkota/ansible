@@ -2,8 +2,10 @@
   hosts: web
   become: yes
   tasks:
-  - name: "{{ item }}"
-    state: latest
-  loop:
-  - mysql
-  - nginx
+  - name: installations
+    ansible.builtin.dnf:
+    - name: "{{ item }}"
+      state: latest
+    loop:
+    - mysql
+    - nginx
